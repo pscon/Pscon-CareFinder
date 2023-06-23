@@ -8,6 +8,13 @@ module.exports = {
 
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["light", "dark"],
+    themes: ["light"],
+  },
+  theme: {
+    extend: {
+      fontFamily: {
+        signature: ["Great Vibes"],
+      },
+    },
   },
 };

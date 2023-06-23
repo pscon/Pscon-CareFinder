@@ -13,7 +13,7 @@ function ThemeToggle(): JSX.Element {
 
   const handleToggle = (e: ChangeEvent<HTMLInputElement>): void => {
     if (e.target.checked) {
-      setTheme("dark");
+      setTheme("light");
     } else {
       setTheme("light");
     }
@@ -27,7 +27,7 @@ function ThemeToggle(): JSX.Element {
     }
   }, [theme]);
   return (
-    <label className="swap swap-rotate text-white">
+    <label className="swap swap-rotate text-[#08299B]">
       <input onChange={handleToggle} type="checkbox" />
       <svg
         className="swap-on fill-current w-7 h-7 "
