@@ -46,7 +46,7 @@ function Navbar() {
             href="https://medium.com/@philipnwabuwa/carefinder-app-documentation-f93f5ba76eb6"
             className="text-sm font-semibold leading-6 "
           >
-            Documentaion
+            Documentation
           </Link>
 
           <Link href="/add" className="text-sm font-semibold leading-6 ">

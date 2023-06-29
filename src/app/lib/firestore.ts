@@ -14,12 +14,19 @@ import {
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBZ43SwjxDhXx5jYuPVei4RmsuPoWs1wSo",
-  authDomain: "carefinder-db.firebaseapp.com",
-  projectId: "carefinder-db",
-  storageBucket: "carefinder-db.appspot.scom",
-  messagingSenderId: "1065353021456",
-  appId: "1:1065353021456:web:87470c0842f0f4f9d5a295",
+  // apiKey: "AIzaSyBZ43SwjxDhXx5jYuPVei4RmsuPoWs1wSo",
+  // authDomain: "carefinder-db.firebaseapp.com",
+  // projectId: "carefinder-db",
+  // storageBucket: "carefinder-db.appspot.scom",
+  // messagingSenderId: "1065353021456",
+  // appId: "1:1065353021456:web:87470c0842f0f4f9d5a295",
+  apiKey: "AIzaSyD0K_Eo0mU27oF9hGP5CU-o7jQjKB-_G_0",
+  authDomain: "pscon-carefinder-52436.firebaseapp.com",
+  projectId: "pscon-carefinder-52436",
+  storageBucket: "pscon-carefinder-52436.appspot.com",
+  messagingSenderId: "173053611065",
+  appId: "1:173053611065:web:08b9f5fe7f539473ab51e8",
+  measurementId: "G-VNS4W4NS6K"
 };
 
 const app = initializeApp(firebaseConfig);
