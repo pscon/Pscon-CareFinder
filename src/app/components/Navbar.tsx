@@ -42,12 +42,7 @@ function Navbar() {
           <Link href="/hospitals" className="text-sm font-semibold leading-6 ">
             Hospitals
           </Link>
-          <Link
-            href="https://medium.com/@philipnwabuwa/carefinder-app-documentation-f93f5ba76eb6"
-            className="text-sm font-semibold leading-6 "
-          >
-            Documentation
-          </Link>
+          
 
           <Link href="/add" className="text-sm font-semibold leading-6 ">
             Add Hospital
@@ -110,16 +105,9 @@ function Navbar() {
                   href="/hospitals"
                   className="-mx-3 text-[#08299B] block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50 hover:text-gray-900"
                 >
-                  Hospitals
+                 Find Hospitals
                 </Link>
-                <Link
-                  onClick={() => setMobileMenuOpen(false)}
-                  href="https://medium.com/@philipnwabuwa/carefinder-app-documentation-f93f5ba76eb6"
-                  className="-mx-3 text-[#08299B] block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50 hover:text-gray-900"
-                >
-                  Documentation
-                </Link>
-
+              
                 <Link
                   onClick={() => setMobileMenuOpen(false)}
                   href="/add"
