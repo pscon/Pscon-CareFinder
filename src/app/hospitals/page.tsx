@@ -99,7 +99,7 @@ const Hospitals = () => {
         </div>
       ) : (
         <div className="mt-[7.5rem] mb-10 text-center md:mx-6 mx-3">
-          <h1 className="uppercase text-2xl font-extrabold mb-5">
+          <h1 className="uppercase text-[#08299B] text-3xl font-extrabold mb-5">
             List of Hospitals
           </h1>
           <div className="flex flex-col md:flex-row items-start md:items-center justify-center">
@@ -112,7 +112,7 @@ const Hospitals = () => {
               }}
             />
             <button
-              className="btn md:mt-0 md:ml-2 mt-2"
+              className="btn btn-secondary md:mt-0 md:ml-2 mt-2"
               onClick={handleFindHospitalsNearMe}
             >
               Nearby Hospitals&nbsp;
@@ -156,21 +156,26 @@ const Hospitals = () => {
                   </div>
                 )}
                 {currentItems.map((hospital) => (
+                                        <Link className="cursor-pointer  " href={`/hospitals/${hospital.id}`}                     key={hospital.id}
+                                        >
+
                   <li
-                    key={hospital.id}
-                    className="p-3 border border-solid border-black rounded-md mt-2 mb-5"
+                    className="p-3 border shadow-lg rounded-md hover:shadow-xl hover:translate-y-2 hover:border-red-200 mt-2 mb-5"
                   >
                     <div className="flex items-center justify-between">
-                      <h2 className="font-bold">{hospital.name}</h2>
+                      <h2 className="font-bold">
+                        <span style={{fontSize: "20px", fontWeight: "900px"}} >Hospital Name:  </span>
+                        {hospital.name}</h2>
 
                       <Link className="ml-1" href={`/hospitals/${hospital.id}`}>
-                        <button className="btn">Details</button>
+                        <button className="btn btn-secondary">Details</button>
                       </Link>
                     </div>
                     <p className="md:w-[60%] w-[70%] md:text-base text-xs">
-                      {hospital.address}, {hospital.city}, {hospital.state}
+                    <span style={{fontSize: "20px", fontWeight: "900px"}}>Address: </span>  {hospital.address}, {hospital.city}, {hospital.state}
                     </p>
                   </li>
+                </Link>
                 ))}
               </>
             )}
@@ -180,7 +185,7 @@ const Hospitals = () => {
             <ExportCSV />
             <div className="flex items-center md:mt-0 mt-3">
               <button
-                className="mx-2 btn"
+                className="mx-2 btn btn-secondary"
                 disabled={currentPage === 1}
                 onClick={() => handlePageChange(currentPage - 1)}
               >
@@ -192,7 +197,7 @@ const Hospitals = () => {
                 {Math.ceil(hospitals.length / itemsPerPage)}
               </p>
               <button
-                className="mx-2 btn"
+                className="mx-2 btn btn-secondary "
                 disabled={currentItems.length < itemsPerPage}
                 onClick={() => handlePageChange(currentPage + 1)}
               >

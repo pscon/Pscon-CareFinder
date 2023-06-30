@@ -64,7 +64,7 @@ const AddHospitalForm = () => {
 
   return (
     <section className="md:h-screen mt-32 mx-3 mb-10">
-      <h2 className="text-center uppercase text-xl font-extrabold">
+      <h2 className="text-center text-[#08299B] uppercase text-2xl font-extrabold">
         Add a Hospital
       </h2>
 
@@ -91,7 +91,7 @@ const AddHospitalForm = () => {
 
         <div className="form-control mx-3 my-4 w-full max-w-3xl">
           <label className="label" htmlFor="Nickname">
-            <span className="label-text">Nickname</span>
+            <span className="label-text">Hospital Nickname</span>
           </label>{" "}
           <input
             type="text"
@@ -211,7 +211,7 @@ const AddHospitalForm = () => {
         {errorMessage && <p className="text-red-500">{errorMessage}</p>}
 
         {successMessage && <p className="text-green-500">{successMessage}</p>}
-        <button className="btn w-full max-w-3xl mt-4 md:mb-4" type="submit">
+        <button className="btn btn-secondary font-bold   w-full max-w-3xl mt-4 md:mb-4" type="submit">
           Submit
         </button>
       </form>

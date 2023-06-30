@@ -39,7 +39,7 @@ const Page = () => {
     <div className="">
    <div className="bg-[#E0E4EC] ">
       <div className=" px-6 pb-4 lg:flex  mx-auto w-5/6 items-center justify-center md:h-5/6">
-        <div className="z-10 mt-32 md:basis-3/5" >
+        <div className="z-10 mt-10 md:basis-3/5" >
 
 
           <h1 className="text-4xl font-bold tracking-tight text-[#08299B]  sm:text-6xl">

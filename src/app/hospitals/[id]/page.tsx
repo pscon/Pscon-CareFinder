@@ -88,7 +88,7 @@ const Page = ({
   };
 
   return (
-    <section className="flex flex-col lg:grid lg:grid-cols-6 lg:gap-6 mx-6 mt-32 mb-10 sm:mb-20 lg:mb-0 md:h-[34rem]">
+    <section className="bg-white shadow-lg p-3 flex flex-col lg:grid lg:grid-cols-6 lg:gap-6 mx-6 mt-32 mb-10 sm:mb-20 lg:mb-0 md:h-[34rem]">
       <div className="col-span-5">
         <div>
           <h1 className="uppercase font-bold text-3xl text-center">
@@ -107,20 +107,20 @@ const Page = ({
           </p>
 
           <div className="lg:grid lg:grid-cols-3 flex flex-col gap-4 lg:mr-5">
-            <Link href={hospital.website} target="_blank" className="btn my-3">
+            <Link href={hospital.website} target="_blank" className="btn btn-secondary my-3">
               Visit Website
               <AiOutlineSwapRight className="ml-2 w-7 h-7" />
             </Link>
 
             <Link
-              className="btn my-3"
+              className="btn btn-secondary my-3"
               target="_blank"
               href={`https://www.google.com/maps/search/${hospital.name} ${hospital.city}`}
             >
               View on Google Map
               <BiMapPin className="ml-2 w-7 h-7" />
             </Link>
-            <button onClick={openModal} className="btn my-3">
+            <button onClick={openModal} className="btn btn-secondary my-3">
               Delete
               <BiTrash className="ml-2 w-6 h-6" />
             </button>
@@ -152,7 +152,7 @@ const Page = ({
         </div>
       </div>
       <div className="mt-12 flex flex-col items-center ">
-        <h3 className="text-center font-bold text-lg mb-4">Share webpage</h3>
+        <h3 className="text-center font-bold text-[#08299B] text-lg mb-4">Share webpage</h3>
         <div className="flex justify-center items-center">
           <button onClick={copyToClipboard}>
             <AiOutlineLink className="w-7 h-7 mx-2" />
