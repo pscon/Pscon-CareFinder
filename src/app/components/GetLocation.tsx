@@ -28,7 +28,7 @@ const FindHospitalsNearMe = () => {
 
   return (
     <button
-      className="btn md:mt-0 md:ml-2 mt-2"
+      className="btn btn-secondary  md:mt-0 md:ml-2 mt-2"
       onClick={handleFindHospitalsNearMe}
     >
       Nearby Hospitals <BiLocationPlus className="ml-2 w-6 h-6" />
