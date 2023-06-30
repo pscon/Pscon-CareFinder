@@ -15,7 +15,9 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
+ <img src="https://github.com/pscon/Pscon-CareFinder/assets/72552585/c9b2f8e5-3efb-429e-b53b-874722e1f875" alt="landing-page text" width="900px" height="600px">
+ <img src="[url](https://github.com/pscon/Pscon-CareFinder/assets/72552585/85d9f4be-ad45-4880-868b-08d6e016a31d)" alt="List-hospitals text" width="600px" height="600px">
+
 
 ### Links
 
